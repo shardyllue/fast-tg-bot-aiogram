@@ -6,6 +6,6 @@ COPY . .
 
 RUN pip3 install --upgrade setuptools
 
-RUN poetry install
+RUN pip3 install -r ./requirements.txt
 
 RUN chmod 755 .
